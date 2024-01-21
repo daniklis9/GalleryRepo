@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		09EC26052B59BE9B00F3CC79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EC26042B59BE9B00F3CC79 /* AppDelegate.swift */; };
 		09EC26072B59BE9B00F3CC79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EC26062B59BE9B00F3CC79 /* SceneDelegate.swift */; };
-		09EC26092B59BE9B00F3CC79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EC26082B59BE9B00F3CC79 /* ViewController.swift */; };
+		09EC26092B59BE9B00F3CC79 /* ImageGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EC26082B59BE9B00F3CC79 /* ImageGalleryViewController.swift */; };
 		09EC260C2B59BE9B00F3CC79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09EC260A2B59BE9B00F3CC79 /* Main.storyboard */; };
 		09EC260E2B59BE9C00F3CC79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09EC260D2B59BE9C00F3CC79 /* Assets.xcassets */; };
 		09EC26112B59BE9C00F3CC79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09EC260F2B59BE9C00F3CC79 /* LaunchScreen.storyboard */; };
 		09EC261D2B5AB01C00F3CC79 /* ImageGalleryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EC261C2B5AB01C00F3CC79 /* ImageGalleryPresenter.swift */; };
+		09EC26272B5AB99F00F3CC79 /* ImageGalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EC26252B5AB99F00F3CC79 /* ImageGalleryCollectionViewCell.swift */; };
+		09EC26282B5AB99F00F3CC79 /* ImageGalleryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09EC26262B5AB99F00F3CC79 /* ImageGalleryCollectionViewCell.xib */; };
+		09EC262A2B5AFAE900F3CC79 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EC26292B5AFAE900F3CC79 /* ImageModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		09EC26012B59BE9B00F3CC79 /* GalleryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GalleryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09EC26042B59BE9B00F3CC79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09EC26062B59BE9B00F3CC79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		09EC26082B59BE9B00F3CC79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		09EC26082B59BE9B00F3CC79 /* ImageGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGalleryViewController.swift; sourceTree = "<group>"; };
 		09EC260B2B59BE9B00F3CC79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		09EC260D2B59BE9C00F3CC79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09EC26102B59BE9C00F3CC79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09EC26122B59BE9C00F3CC79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09EC261C2B5AB01C00F3CC79 /* ImageGalleryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGalleryPresenter.swift; sourceTree = "<group>"; };
+		09EC26252B5AB99F00F3CC79 /* ImageGalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGalleryCollectionViewCell.swift; sourceTree = "<group>"; };
+		09EC26262B5AB99F00F3CC79 /* ImageGalleryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageGalleryCollectionViewCell.xib; sourceTree = "<group>"; };
+		09EC26292B5AFAE900F3CC79 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +87,8 @@
 		09EC26192B59BFD300F3CC79 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				09EC26082B59BE9B00F3CC79 /* ViewController.swift */,
+				09EC26242B5AB97D00F3CC79 /* CollectionViewCell */,
+				09EC26082B59BE9B00F3CC79 /* ImageGalleryViewController.swift */,
 				09EC260A2B59BE9B00F3CC79 /* Main.storyboard */,
 			);
 			path = View;
@@ -98,8 +105,18 @@
 		09EC261B2B59BFEF00F3CC79 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				09EC26292B5AFAE900F3CC79 /* ImageModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		09EC26242B5AB97D00F3CC79 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				09EC26252B5AB99F00F3CC79 /* ImageGalleryCollectionViewCell.swift */,
+				09EC26262B5AB99F00F3CC79 /* ImageGalleryCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09EC26112B59BE9C00F3CC79 /* LaunchScreen.storyboard in Resources */,
+				09EC26282B5AB99F00F3CC79 /* ImageGalleryCollectionViewCell.xib in Resources */,
 				09EC260E2B59BE9C00F3CC79 /* Assets.xcassets in Resources */,
 				09EC260C2B59BE9B00F3CC79 /* Main.storyboard in Resources */,
 			);
@@ -173,8 +191,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09EC26092B59BE9B00F3CC79 /* ViewController.swift in Sources */,
+				09EC26092B59BE9B00F3CC79 /* ImageGalleryViewController.swift in Sources */,
+				09EC262A2B5AFAE900F3CC79 /* ImageModel.swift in Sources */,
 				09EC261D2B5AB01C00F3CC79 /* ImageGalleryPresenter.swift in Sources */,
+				09EC26272B5AB99F00F3CC79 /* ImageGalleryCollectionViewCell.swift in Sources */,
 				09EC26052B59BE9B00F3CC79 /* AppDelegate.swift in Sources */,
 				09EC26072B59BE9B00F3CC79 /* SceneDelegate.swift in Sources */,
 			);
@@ -328,7 +348,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6B5S76RGS4;
+				DEVELOPMENT_TEAM = JH326RM538;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GalleryApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -357,7 +377,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6B5S76RGS4;
+				DEVELOPMENT_TEAM = JH326RM538;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GalleryApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
